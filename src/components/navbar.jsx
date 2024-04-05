@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
-
+import "../styles/navbar.css"
 
 const navbar = () => {
   return (
@@ -11,6 +11,7 @@ const navbar = () => {
             <span>
                 <FaShoppingCart/>
             </span>
+            <span>0</span>
         </div>
       </div>
     </nav>
