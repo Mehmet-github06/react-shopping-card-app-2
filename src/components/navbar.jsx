@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaShoppingCart } from "react-icons/fa";
 
 
 const navbar = () => {
@@ -9,7 +9,7 @@ const navbar = () => {
         <span className='my_shop'>My Shopping</span>
         <div className='cart'>
             <span>
-                
+                <FaShoppingCart/>
             </span>
         </div>
       </div>
