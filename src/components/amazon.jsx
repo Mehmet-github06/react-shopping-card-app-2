@@ -1,13 +1,16 @@
 import React from 'react'
 import list from "../data";
-import Cards from "./Card";
+import Cards from "./card";
 
 
 const amazon = () => {
   return (
-    <div>
+    <section>
+      {list.map((item) => {
+        <Cards/>
+      })}
       
-    </div>
+    </section>
   )
 }
 
