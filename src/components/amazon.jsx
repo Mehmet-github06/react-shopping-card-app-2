@@ -1,4 +1,7 @@
 import React from 'react'
+import list from "../data";
+import Cards from "./Card";
+
 
 const amazon = () => {
   return (
