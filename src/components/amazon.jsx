@@ -4,11 +4,11 @@ import Cards from "./card";
 import "../styles/amazon.css";
 
 
-const amazon = () => {
+const amazon = ({handleClick}) => {
   return (
     <section>
       {list.map((item) => (
-        <Cards key={item.id} item={item}/>
+        <Cards key={item.id} item={item} handleClick={handleClick}/>
       ))}
       
     </section>
