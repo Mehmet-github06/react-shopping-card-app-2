@@ -1,6 +1,6 @@
 import React from 'react'
 
-const card = ({item}) => {
+const card = ({item,handleClick}) => {
     const {id,title,author,price,img} =item
     return (
         <div className='cards'>

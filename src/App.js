@@ -17,8 +17,9 @@ const handleClick = (item) => {
 
   return (
     <React.Fragment>
-     <Navbar/>
-     <Amazon handleClick={handleClick}/>
+     <Navbar setshow={setShow}/>
+     { show ? <Amazon/> : "cart"}
+     {/* <Amazon handleClick={handleClick}/> */}
     </React.Fragment>
   );
 }
