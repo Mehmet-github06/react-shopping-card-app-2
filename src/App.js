@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./App.css";
 import Navbar from "./components/navbar";
 import Amazon from "./components/amazon";
+import Cart from "./components/cart";
 
 
 
@@ -18,7 +19,7 @@ const handleClick = (item) => {
   return (
     <React.Fragment>
      <Navbar setshow={setShow}/>
-     { show ? <Amazon/> : "cart"}
+     { show ? <Amazon/> : <Cart/>}
      {/* <Amazon handleClick={handleClick}/> */}
     </React.Fragment>
   );
