@@ -2,7 +2,7 @@ import React from 'react'
 import { FaShoppingCart } from "react-icons/fa";
 import "../styles/navbar.css"
 
-const navbar = ({setShow}) => {
+const navbar = ({setShow,size}) => {
   return (
     <nav>
       <div className='nav_box'>
