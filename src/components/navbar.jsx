@@ -1,21 +1,25 @@
-import React from 'react'
-import { FaShoppingCart } from "react-icons/fa";
-import "../styles/navbar.css"
+import React, { useState } from 'react'
+import {FaShoppingCart} from "react-icons/fa";
+import '../styles/navbar.css';
 
-const navbar = ({setShow,size}) => {
+
+
+export default function navbar({setShow,size}) {
+
+
+
   return (
     <nav>
-      <div className='nav_box'>
-        <span className='my_shop' onClick={()=>setShow(true)} >My Shopping Book md</span>
-        <div className='cart'onClick={()=> setShow(false)} >
-            <span>
+        <div className='nav_box'>
+            <span className='my-shop' onClick={()=>setShow(true)} >My Shopping</span>
+            <div className='cart' onClick={()=>setShow(false)} >
+                <span>
                 <FaShoppingCart/>
-            </span>
-            <span>0</span>
+                </span>
+                <span>{size}</span>
+            </div>
         </div>
-      </div>
     </nav>
+
   )
 }
-
-export default navbar
